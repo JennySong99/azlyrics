@@ -1,0 +1,580 @@
+body {
+	margin: 0;
+	font-family: Avenir;
+}
+
+/*** header ***/
+
+#header {
+	background: #D3A5AF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#header-logo {
+	max-width: 50px;
+	max-height: 50px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#searchbar {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin-left: -165px;
+	width: 220px;
+}
+
+#search-text {
+	width: 200px;
+	height: 18px;
+	border-width: thin;
+	border-color: #664466;
+}
+
+#glass {
+	width: 20px;
+	height: 20px;
+	background-color: #664466;
+	position: relative;
+	margin-top: 23px;
+	margin-left: -40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#glass:hover {
+	cursor: pointer;
+	background-color: #A3738C;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 700px;
+}
+
+.navbar-item {
+	color: #FEFEFA;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+
+.navbar-item:hover {
+	cursor: pointer;
+	color: #A3738C;
+}
+
+.navbar-item:active {
+	color: #664466;
+	font-size: bolder;
+}
+
+/*** end header ***/
+
+.bigbody {
+	/*padding-left: 150px;
+	padding-right:150px;*/
+	display: flex;
+	flex-direction: column;
+	flex-direction: center;
+	justify-content: space-evenly;
+	font-family: "Avenir";
+	background: #FEFEFA;
+}
+.logo {
+	max-width: 50px;
+	max-height: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#searchbar-2 {
+	width: 200px;
+	height: 18px;
+	border-width: thin;
+	border-color: #664466;
+	position: relative;
+	top: -10px;
+
+}
+
+#glass-2 {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -32px;
+	background-color: #664466;
+	position: relative;
+	left: 204px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#glass-2:hover {
+	cursor:pointer;
+}
+
+#search {
+	font-size: 36px;
+	color: #664466;
+	font-weight: bolder;
+	position: relative;
+	left: 48px;
+}
+
+/*.bigbody {
+	display: flex;
+	flex-direction: column;
+}*/
+
+.artist-data {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#profile {
+	border-radius:50%;
+}
+
+.artist-pic {
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+.artist-info {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.artist-name {
+	font: "Avenir";
+	font-size: 20px;
+	color:#664466;
+	margin-top: 50px;
+}
+
+.songs-count {
+	margin-top: -40px;
+}
+
+.like-button {
+	margin-top: -10px;
+}
+
+.like-button .liked-button {
+	position:relative;
+	margin-top: 0px;
+}
+
+.like-button .unliked-button {
+	position:relative;
+	margin-top: -31.5px;
+}
+.like-button :hover {
+	cursor: pointer;
+}
+
+.like-button .unliked-button :hover {
+	opacity: 0;
+}
+
+.artist-info .search {
+	margin-top:20px;
+}
+
+.songs-count {
+	font-size:20px;
+	color:#A3738C;
+	word-spacing: 2px;
+	letter-spacing: 0.7px;
+}
+
+.Hot {
+/*	display:block;
+*/	display:flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	padding-bottom:20px;
+	padding-left: 20px;
+	/*width: 1140px;
+    height: 390px;*/
+	border: 0.5px solid #664466;
+	box-sizing: content-box;
+/*	align-items: center;
+*/}
+
+.Hot-title {
+	display:flex;
+	color:#664466;
+	padding-left: 0px;
+	align-items: flex-start;
+}
+.Hot-title :hover{
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity .3s;
+}
+.Hot-body-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list {
+	display:flex;
+	flex-direction: row;
+	padding-bottom: 1px;
+	font-size:15px;
+	color:#A3738C;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	width: 1100px;
+    height: 60px;
+	border: 0.5px solid #664466;
+	border-bottom: 0px;
+	border-right: 0px;
+	box-sizing: content-box;
+}
+
+.list :hover .song-name{
+	cursor:pointer;
+	color: #664466;
+	font-weight: bold;
+}
+
+.list .song-text {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.song-number {
+	padding-right:10px;
+	padding-left: 10px; 
+}
+
+.more {
+	position: absolute;
+	margin-left:715px;
+	color:#A3738C;
+	margin-top: 10px;
+}
+
+.like2 {
+	position:absolute;
+	margin-left:680px;
+	margin-top: 10px;
+	color:#A3738C;
+}
+
+
+.like2 .liked {
+	position:relative;
+	margin-top: 0px;
+}
+
+.like2 .unliked {
+	position:relative;
+	margin-top: -31.5px;
+}
+
+.like2 :hover {
+	cursor: pointer;
+}
+
+.like2 .unliked :hover {
+	opacity: 0;
+}
+
+
+.more1 {
+	position: absolute;
+	margin-left:1000px;
+	color:#A3738C;
+}
+
+.like1 {
+	position:absolute;
+	margin-left:965px;
+	color:#A3738C;
+}
+
+
+.like1 .liked {
+	position:relative;
+	margin-top: 0px;
+}
+
+.like1 .unliked {
+	position:relative;
+	margin-top: -30px;
+}
+
+.like1 :hover {
+	cursor: pointer;
+}
+
+.like1 .unliked :hover {
+	opacity: 0;
+}
+
+.liked :active .unliked{
+	opacity: 0;
+}
+
+.more :hover{
+	cursor:pointer;
+	opacity: 0.3;;
+   transition: opacity .3s;
+}
+
+.more1 :hover{
+	cursor:pointer;
+	opacity: 0.3;;
+   transition: opacity .3s;
+}
+
+
+
+.artist-detail {
+	display: flex;
+	flex-direction: column;
+}
+
+.second-body {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+}
+
+.album-head {
+	position: relative;
+	margin-left:0px;
+	color:#664466;
+}
+
+.album-head :hover{
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity .3s;
+}
+
+.album {
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+	width: 307px;
+    height: 750px;
+	border: 0.5px solid #664466;
+	border-right:0px;
+}
+
+.album-name {
+	font-weight: bold;
+}
+
+
+.list :hover .song-name{
+	cursor:pointer;
+	color: #664466;
+	font-weight: bold;
+}
+.alblum-info {
+	display:flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+	width: 300px;
+    height: 100px;
+	border: 0.5px solid #664466;
+	border-bottom: 5px;
+	border-right: 0px;
+	box-sizing: border-box;
+}
+
+.alblum-info :hover .album-name{
+	cursor:pointer;
+	color: #664466;
+}
+.album-tiny {
+	display:flex;
+}
+.album-tiny :hover {
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.3s;
+}
+.discription {
+	display: flex;
+	flex-direction: column;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+	font-size:15px;
+	color:#A3738C;
+	word-spacing: 2px;
+	letter-spacing: 0.5px;
+}
+
+.album-year{
+	font-style: "Avenir";
+}
+
+.songs {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+    height: 750px;
+	border: 0.5px solid #664466;
+	width: 800px;
+	box-sizing: border-box;
+}
+
+.song-head {
+	justify-content:center;
+	color:#664466;
+}
+
+.song-head :hover{
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity .3s;
+}
+
+.list-of-songs .song {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size:20px;
+	color:#A3738C;
+	word-spacing: 2px;
+	letter-spacing: 0.7px;
+	height: 40px;
+	border: 0.5px solid #664466;
+	width: 750px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	box-sizing: content-box;
+}
+.song :hover {
+	cursor:pointer;
+	color: #664466;
+	font-weight: bold;
+}
+.list-of-songs .songnumber{
+	padding-left: 2px;
+	padding-right: 20px;
+}
+
+/*** footer ***/
+
+#footer {
+	font-size: 12px;
+	background-color: #664466;
+	color: #FEFEFA;
+	height: 160px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#footer-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: auto;
+	margin-right: 300px;
+}
+
+.footer-left-text {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+#footer-logo {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+#footer-right {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	right: 15%;
+
+}
+
+.policy {
+	color: #FEFEFA;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+.policy:visited {
+	color: #D3A5AF;
+}
+
+.policy:hover {
+	color: #D3A5AF;
+}
+
+#social {
+	display: flex;
+	flex-direction: row;
+	width: 200px;
+	margin-left: -60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	height: 50px;
+}
+
+.social-button {
+	border-radius: 50%;
+	max-height: 40px;
+	max-width: 40px;
+	margin-right: -50px;
+}
+
+.social-button:hover {
+	cursor: pointer;
+}
+

@@ -1,0 +1,339 @@
+/**
+ * colors
+ * light pink: #D3A5AF;
+ * dark pink: #A3738C;
+ * purple: #664466;
+ * white: #FEFEFA;
+ */
+
+
+/**
+ * fonts
+ * font-family: Avenir;
+ */
+
+/*** header ***/
+
+ body {
+ 	font-family: Avenir;
+ 	margin: 0;
+ 	background: #FEFEFA;
+ }
+/*** header ***/
+
+#header {
+	background: #D3A5AF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#header-logo {
+	max-width: 50px;
+	max-height: 50px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#searchbar {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin-left: -165px;
+	width: 220px;
+}
+
+#search-text {
+	width: 200px;
+	height: 18px;
+	border-width: thin;
+	border-color: #664466;
+	background: #FEFEFA;
+}
+
+#glass {
+	width: 20px;
+	height: 20px;
+	background-color: #664466;
+	position: relative;
+	margin-top: 23px;
+	margin-left: -40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#glass:hover {
+	cursor: pointer;
+	background-color: #A3738C;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 700px;
+}
+
+.navbar-item {
+	color: #FEFEFA;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+
+.navbar-item:hover {
+	cursor: pointer;
+	color: #A3738C;
+}
+
+.navbar-item:active {
+	color: #664466;
+	font-size: bolder;
+}
+
+/*** end header ***/
+
+#welcome {
+	width: 100%;
+	height: 700px;
+	 background-image: url("images/headphones.jpg");
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+#welcome-text {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	color: #FEFEFA;
+	text-align: center;
+	margin-left: -100px;
+}
+
+#big-text {
+	font-weight: bold;
+	font-size: 80px;
+}
+
+#description-text {
+   font-size: 40px;
+   margin-top: 10px;
+   margin-left: 40px;
+}
+
+#welcome-search {
+	height: 400px;
+	width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FEFEFA;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+#welcome-search form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.search-item {
+    text-align: left;
+    margin: 30px 10px 5px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #D3A5AF;
+    font-size: 20px;
+}
+
+.search-input {
+	width: 300px;
+}
+
+#search-button {
+	border-radius: 30px;
+	border: none;
+	background: #D3A5AF;
+	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	color: #FEFEFA;
+	font-size: 24px;
+	padding: 15px;
+	letter-spacing: 2px;
+}
+
+#search-button:hover {
+	cursor: pointer;
+	background: #A3738C;
+}
+
+#whats-hot {
+	margin-top: 50px;
+	width: 100%;
+	font-size: 48px;
+}
+
+#whats-hot-text {
+	text-align: center;
+	margin: 10px;
+	font-weight: bold;
+	font-size: 36px;
+	color: #664466;
+	letter-spacing: 1px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.album-cover {
+	height: 300px;
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 50px;
+	box-shadow: 5px 5px 4px #dfdfdf;
+}
+
+.album-regular {
+	z-index: 3;
+}
+
+.album-hover {
+	position: relative;
+	margin-top: -318px;
+	z-index: 1;
+}
+
+.album-img {
+	opacity: 0.4;
+}
+
+.album-info {
+ 	text-align: center;
+ 	color: #000000;
+ 	visibility: hidden;
+ 	margin-top: -200px;
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	opacity: 1;
+ }
+
+ .album-cover:hover {
+ 	cursor: pointer;
+ }
+
+.album-cover:hover .album-regular {
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.album-cover:hover .album-info {
+	visibility: visible;
+	transition: 0.2s;
+}
+
+/*** footer ***/
+
+#footer {
+font-size: 12px;
+background-color: #664466;
+color: #FEFEFA;
+height: 160px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#footer-left {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+width: auto;
+margin-right: 300px;
+}
+
+.footer-left-text {
+margin-top: -5px;
+margin-bottom: -5px;
+}
+
+#footer-logo {
+max-width: 50px;
+max-height: 50px;
+}
+
+#footer-right {
+display: flex;
+flex-direction: column;
+position: relative;
+right: 15%;
+
+}
+
+.policy {
+color: #FEFEFA;
+margin-top: -5px;
+margin-bottom: -5px;
+}
+
+.policy:visited {
+color: #D3A5AF;
+}
+
+.policy:hover {
+color: #D3A5AF;
+}
+
+#social {
+display: flex;
+flex-direction: row;
+width: 200px;
+margin-left: -60px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 5px;
+height: 50px;
+}
+
+.social-button {
+border-radius: 50%;
+max-height: 40px;
+max-width: 40px;
+margin-right: -50px;
+}
+
+.social-button:hover {
+cursor: pointer;
+}
